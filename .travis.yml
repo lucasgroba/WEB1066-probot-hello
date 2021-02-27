@@ -1,10 +1,10 @@
 sudo: required
 services:
   - docker
-ENV:
-  - NPM_TARGET = test
-  - NPM_TARGET = lint
-  - NPM_TARGET = coverage
+env:
+  - NPM_TARGET=test
+  - NPM_TARGET=lint
+  - NPM_TARGET=coverage
 
 
 before_install:
