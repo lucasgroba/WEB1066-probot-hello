@@ -25,12 +25,11 @@ Changes to your source code get reflected in the container and node restarts
 our app with the latest changes.
 
 ```
-docker run  -it --rm \
-            -e APP_ID=abc \
-            -e PRIVATE_KEY=none \
-            -w /home/node/probot-hello-dev \
-            -v "$(pwd)":/home/node/probot-hello-dev \
-            -p 3000:3000 probot-hello \
+docker run  -it --rm -e APP_ID=abc
+            -e PRIVATE_KEY=none
+            -w /home/node/probot-hello-dev
+            -v "$(pwd)":/home/node/probot-hello-dev
+            -p 3000:3000 probot-hello
             bash -c 'npm install && npm run dev'
 ```
 
